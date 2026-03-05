@@ -7,15 +7,15 @@ import streamlit as st
 from rag import FundFactsRetriever
 
 
-st.set_page_config(page_title="Mutual Fund Facts Chatbot", page_icon="📘", layout="wide")
+st.set_page_config(page_title="Mutual Fund  Facts Chatbot", page_icon="📘", layout="wide")
 
 assistant = FundFactsRetriever()
 
 EXAMPLE_QUESTIONS = [
-    "Expense ratio of HDFC Large Cap Fund",
-    "Exit load of SBI Large Cap Fund",
-    "Minimum SIP of HDFC Flexi Cap Fund",
-    "Lock-in period of SBI ELSS Fund",
+    "What is the expense ratio of HDFC Large Cap Fund",
+    "What is the exit load of SBI Large Cap Fund",
+    "What is the minimum SIP of HDFC Flexi Cap Fund",
+    "What is the lock-in period of SBI ELSS Fund",
 ]
 
 FACT_FIELDS = [
