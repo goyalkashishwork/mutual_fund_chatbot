@@ -157,10 +157,11 @@ st.markdown(
       .hero-title {
         color: #f6f8fc;
         margin: 0;
-        font-size: clamp(1.6rem, 3vw, 2.2rem);
+        font-size: clamp(1.4rem, 6vw, 2.2rem);
         letter-spacing: -0.02em;
-        line-height: 1.08;
+        line-height: 1.2;
         font-weight: 800;
+        word-wrap:break-word;
       }
 
       .hero-sub {
