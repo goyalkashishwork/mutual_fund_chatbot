@@ -16,7 +16,7 @@ from prompts import (
 )
 
 BASE_DIR = Path(__file__).resolve().parent
-DATA_PATH = BASE_DIR / "data" / "funds.json"
+DATA_PATH = BASE_DIR /"funds.json"
 DEFAULT_SOURCE_URL = "https://www.indmoney.com/mutual-funds"
 STATEMENT_SOURCE_URL = (
     "https://www.indmoney.com/learn/mutual-funds/"
