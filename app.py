@@ -145,6 +145,10 @@ st.markdown(
         padding: 1.5rem 1rem;
         box-shadow: 0 20px 44px rgba(10, 17, 28, 0.32);
         text-align:center;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
       }
 
       .hero-top {
