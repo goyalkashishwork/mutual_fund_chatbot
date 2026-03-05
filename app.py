@@ -14,8 +14,8 @@ assistant = FundFactsRetriever()
 EXAMPLE_QUESTIONS = [
     "How to download mutual fund statement?",
     "Tell me about the exit load of SBI Large Cap Fund?",
-    "What is the minimum SIP of HDFC Flexi Cap Fund",
-    "What is the lock-in period of SBI ELSS Fund",
+    "What is the minimum SIP of HDFC Flexi Cap Fund?",
+    "Is there a lock-in period for SBI ELSS Fund?",
 ]
 
 FACT_FIELDS = [
