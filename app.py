@@ -142,8 +142,9 @@ st.markdown(
           linear-gradient(120deg, #0a121d 0%, #0f1c2f 52%, #182238 100%);
         border: 1px solid rgba(71, 88, 112, 0.65);
         border-radius: var(--radius-xl);
-        padding: 1.25rem 1.35rem;
+        padding: 1.5rem 1rem;
         box-shadow: 0 20px 44px rgba(10, 17, 28, 0.32);
+        text-align:center;
       }
 
       .hero-top {
@@ -156,12 +157,12 @@ st.markdown(
 
       .hero-title {
         color: #f6f8fc;
-        margin: 0;
-        font-size: clamp(1.4rem, 6vw, 2.2rem);
-        letter-spacing: -0.02em;
+        margin: 0.5rem;
+        font-size: clamp(1.3rem, 5vw, 2.2rem);
+        letter-spacing: -0.01em;
         line-height: 1.2;
         font-weight: 800;
-        word-wrap:break-word;
+    
       }
 
       .hero-sub {
@@ -172,14 +173,15 @@ st.markdown(
       }
 
       .hero-badge {
+        display:inline-block;
         color: #d4ffef;
         background: rgba(0, 179, 134, 0.2);
         border: 1px solid rgba(0, 179, 134, 0.6);
         border-radius: 999px;
-        padding: 0.3rem 0.75rem;
-        font-size: 0.78rem;
+        padding: 0.3rem 0.8rem;
+        font-size: 0.7rem;
         font-weight: 700;
-        white-space: nowrap;
+    
       }
 
       .glass-card {
@@ -469,11 +471,11 @@ st.markdown(
 st.markdown(
     """
     <section class="hero">
-      <div class="hero-top">
-        <div>
+      
           <h1 class="hero-title">Mutual Fund Facts Chatbot</h1>
           <p class="hero-sub">Facts-only Mutual Fund FAQ (INDMoney sources)</p>
-        </div>
+       <div style="margin-top:10px;">
+       
         <span class="hero-badge">Facts-only. No investment advice.</span>
       </div>
     </section>
