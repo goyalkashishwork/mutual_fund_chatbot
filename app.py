@@ -474,6 +474,7 @@ st.markdown(
 
 st.markdown(
     """
+    <div style="text-align:center;padding:20px 0;">
     <section class="hero" style="display:flex;flex-direction:column;align-items:center;text-align:center;">
       <h1 class="hero-title">Mutual Fund Facts Chatbot</h1>
       <p class="hero-sub" style="margin-bottom: 10px;">Facts-only FAQ (INDMoney sources)</p>
@@ -481,6 +482,7 @@ st.markdown(
         <span class="hero-badge">Facts-only. No investment advice.</span>
       </div>
     </section>
+    </div>
     """,
     unsafe_allow_html=True
 )
