@@ -470,7 +470,7 @@ st.markdown(
 
 st.markdown(
     """
-    <section class="hero">
+    <section class="hero" style="display:flex;flex-direction:column;align-items:center;text-align:center;">
       <h1 class="hero-title">Mutual Fund Facts Chatbot</h1>
       <p class="hero-sub" style="margin-bottom: 10px;">Facts-only FAQ (INDMoney sources)</p>
       <div style="margin-top: 10px;">
@@ -486,16 +486,6 @@ st.markdown('<div class="space-24"></div>', unsafe_allow_html=True)
 main_col, side_col = st.columns([1.8, 1], gap="large")
 
 with main_col:
-    pending_query = st.session_state.get("pending_user_query")
-    if pending_query:
-        # Prefill must happen before the text_input widget is instantiated.
-        st.session_state["user_query"] = pending_query
-        st.session_state["pending_user_query"] = None
-
-    
-
-    st.markdown('<div class="space-16"></div>', unsafe_allow_html=True)
-
     st.markdown('<div class="query-wrap">', unsafe_allow_html=True)
     with st.form("search_form", clear_on_submit=False, enter_to_submit=True):
         st.text_input(
@@ -509,15 +499,7 @@ with main_col:
     if submit:
         run_query(st.session_state.get("user_query", ""))
 
-    st.markdown('<div class="space-16"></div>', unsafe_allow_html=True)
-
-    st.markdown('<p class="chip-label">Example questions</p>', unsafe_allow_html=True)
-    chip_cols = st.columns(4)
-    for idx, question in enumerate(EXAMPLE_QUESTIONS):
-        if chip_cols[idx].button(question, key=f"chip_{idx}"):
-            st.session_state["pending_user_query"] = question
-            run_query(question)
-            st.rerun()
+    # 2. Response Block (Ab ye Search ke turant niche aayega)
     result = st.session_state.get("last_result")
     if result:
         st.markdown('<div class="space-24"></div>', unsafe_allow_html=True)
@@ -525,7 +507,6 @@ with main_col:
         source_url = escape(result["source_url"])
         updated_note = escape(result["last_updated_from_sources"])
 
-        # This only creates the 3 lines you requested inside the card
         result_html = (
             '<section class="glass-card result-card">'
             f'<p class="answer-line">{answer_text}</p>'
@@ -535,6 +516,18 @@ with main_col:
         )
         st.markdown(result_html, unsafe_allow_html=True)
 
+    st.markdown('<div class="space-24"></div>', unsafe_allow_html=True)
+    st.markdown('<p class="chip-label">Example questions</p>', unsafe_allow_html=True)
+    chip_cols = st.columns(4)
+    for idx, question in enumerate(EXAMPLE_QUESTIONS):
+        if chip_cols[idx].button(question, key=f"chip_{idx}"):
+            st.session_state["pending_user_query"] = question
+            run_query(question)
+            st.rerun()
+
+    
+
+  
 with side_col:
     field_tags = "".join(f"<span class='tag'>{escape(item)}</span>" for item in FACT_FIELDS)
     st.markdown(
