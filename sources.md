@@ -20,3 +20,12 @@ Data extracted from the following public INDMoney pages (accessed in March 2026)
 | 14 | ITI Flexi Cap Fund Direct Growth | https://www.indmoney.com/mutual-funds/fund/iti-flexi-cap-fund-direct-growth/1043126 |
 | 15 | Nippon India Flexi Cap Fund Direct Growth | https://www.indmoney.com/mutual-funds/nippon-india-flexi-cap-fund-direct-growth-1039650 |
 | 16 | Flexi Cap Mutual Funds Category Page | https://www.indmoney.com/mutual-funds/equity/flexi-cap/ |
+| 17 | AMFI Mutual Fund Factsheets Download | https://www.amfiindia.com/online-center/download-factsheets |
+| 18 | AMFI Fund Performance Data | https://www.amfiindia.com/otherdata/fund-performance |
+| 19 | AMFI NAV Download / History | https://www.amfiindia.com/net-asset-value/nav-download |
+| 20 | AMFI Investor Corner (Mutual Fund Education) | https://www.amfiindia.com/investor-corner |
+| 21 | AMFI Scheme Details Database | https://www.amfiindia.com/otherdata/scheme-details |
+| 22 | AMFI AUM / AAUM Disclosure Data | https://www.amfiindia.com/research-information/aum-data/aum-aaum-disclosure |
+| 23 | SBI Mutual Fund Factsheets | https://www.sbimf.com/factsheets |
+| 24 | HDFC Mutual Fund Factsheets | https://www.hdfcfund.com/investor-services/factsheets |
+| 25 | Edelweiss Mutual Fund Factsheets | https://www.edelweissmf.com/downloads/factsheets |
