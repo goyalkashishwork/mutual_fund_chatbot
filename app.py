@@ -7,7 +7,7 @@ import streamlit as st
 from rag import FundFactsRetriever
 
 
-st.set_page_config(page_title="Mutual Fund  Facts Chatbot", page_icon="📘")
+st.set_page_config(page_title="Mutual Fund  Facts Chatbot", page_icon="📘", layout="wide")
 
 assistant = FundFactsRetriever()
 
