@@ -473,9 +473,8 @@ st.markdown(
     <section class="hero">
       
           <h1 class="hero-title">Mutual Fund Facts Chatbot</h1>
-          <p class="hero-sub">Facts-only Mutual Fund FAQ (INDMoney sources)</p>
-       <div style="margin-top:10px;">
-       
+          <p class="hero-sub" style="margin-bottom:10px;">Facts-only FAQ (INDMoney sources)</p>
+          <div style="margin-top:10px;">
         <span class="hero-badge">Facts-only. No investment advice.</span>
       </div>
     </section>
