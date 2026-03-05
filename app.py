@@ -479,7 +479,7 @@ st.markdown(
       </div>
     </section>
     """,
-    unsafe_allow_html=True,
+    unsafe_allow_html=True
 )
 
 st.markdown('<div class="space-24"></div>', unsafe_allow_html=True)
