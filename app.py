@@ -166,6 +166,7 @@ st.markdown(
         letter-spacing: -0.01em;
         line-height: 1.2;
         font-weight: 800;
+        display:flex;
     
       }
 
